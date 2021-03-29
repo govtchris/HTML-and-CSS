@@ -1,0 +1,15 @@
+p {
+    background-color: pink;
+  }
+  
+  @media screen and (min-width: 480px) {
+    p {
+      background-color: lightgreen;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+      p {
+          background-color: grey;
+      }
+  }

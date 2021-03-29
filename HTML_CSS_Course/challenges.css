@@ -1,0 +1,158 @@
+body {margin: 0;}
+/*Navbar*/
+
+.navbar {
+    overflow: hidden;
+    display: block;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3em;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    font-weight: bolder;
+    text-align: center;
+}
+
+.navbar a{
+    color: black;
+}
+
+.navbar a:hover {
+    font-family: monospace;
+}
+
+/*Container for image and beauty*/
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.water {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    filter: hue-rotate(100deg);
+    border-radius: 25px;
+    padding: 2px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    font-weight: 900;
+    color: gold;
+  }
+
+  .overlay {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 60%;
+      opacity: 0;
+      transition: 1s ease-in-out;
+      background-color: plum;
+  }
+
+  .container:hover .overlay {
+      opacity: 2;
+  }
+
+  .overlay_text {
+      color:gold;
+      font-size: 50px;
+      position: absolute;
+      text-align: center;
+  }
+/*-----------------------About-----------------------*/
+  
+#about {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#u_table {
+    padding: 2em;
+    background-color: powderblue;
+    margin:auto;
+}
+
+#u_table, th, td{
+    border: 2px double springgreen;
+    padding-top: 1em ;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+th {
+    background-color: pink;
+}
+
+td {
+    background-color: violet;
+}
+
+.hover_text:hover {
+    background-color: pink;
+}
+
+.video_container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.snow_globe {
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.row {
+    align: center;
+    padding-top: 5em;
+    margin: auto;
+}
+
+.column {
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding: 10px;
+    height: 20em;
+    color: darkblue;
+}
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+/*----------------------End About-----------------*/
+
+.unicorn_footer {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: deeppink;
+
+}

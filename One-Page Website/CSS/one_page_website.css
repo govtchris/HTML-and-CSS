@@ -1,0 +1,77 @@
+/*-----------------------------------
+ONE PAGE WEBSITE CSS
+AUTHOR-CHRIS WINDSOR
+-----------------------------------*/
+
+html {
+    font-family: serif;
+    font-size: 16px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#need_more {
+    background-color: lightblue;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.heading_padding {
+    padding: 30px;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+.more_information {
+    background-color: cornsilk;
+    cursor: pointer;
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    box-shadow: -1px -1px 3px 3px darkblue;
+}
+
+.rsvp {
+    background-color: rgba(255, 0, 0, 0.21);
+    width: 60%;
+    margin: 5px;
+    border: solid black;
+    border-radius: 15px;
+} 
+
+.submit {
+    color: rgb(225,225,225);
+    cursor: pointer;
+    border: none;
+    font-weight: 900;
+    outline: none;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 3%;
+    padding: 7px 0px;
+    width: 25%;
+    font-size: 18px;
+    transition: border-color 0.3s color 0.3s background-color 0.3s;
+    border-radius: 7px;
+    background-color: #797a7b;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+}
+
+.submit:hover {
+    color: #000;
+    background-color: #8d8e8f;
+    box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
+}
