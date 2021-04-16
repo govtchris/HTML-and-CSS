@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Jeff Goldblum</title>
 		<link rel="stylesheet" href="./CSS/one_page_website.css">
 	</head>
@@ -38,88 +39,85 @@
 		<!-- GALLERY -->
 		<section>
 			<div id="gallery">
-				<h1>Gallery</h1>
-				<div>
-				
-					<!-- PHOTO-CONTAINER 1 -->
-					<div>
-						<div>
-								<img src="./images/ian_malcolm.jpg" alt="Ian Malcolm">
-								<div>
-									<h3>Click to Find a Way</h3>
-									<p>
-									One of Jeff's most famous roles was as
-									Ian Malcolm in Steven Spielberg's "Jurassic Park"
-									</p>
-								</div>
+				<h1 style="text-align: center;">Gallery</h1>
+
+					<div class="row">
+						<div class="column">
+							<img src="./Images/sm.ian_malcolm.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="./Images/sm.grand_budapest.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="./Images/sm.grandmaster.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="./Images/sm.independence_day.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="./Images/sm.pull_out_king.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
 						</div>
 					</div>
-					<!-- END PHOTO-CONTAINER 1 -->
-					
-					<!-- PHOTO-CONTAINER 2 -->
-					<div>
-						<div>
-								<img src="./images/grandmaster.jpg" alt="Grandmaster">
-								<div>
-									<h3>Click to Marvel At Jeff</h3>
-									<p>
-									Recently Jeff has had taken a high-profile role
-									as "The Grandmaster" in Marvel's "Thor:Ragnarok"
-									</p>
-								</div>
+
+					<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+
+						<div class="mySlides">
+							<div class="numbertext">1 / 5</div>
+								<img src="./Images/ian_malcolm.jpg" style="width:100%">
+							</div>
+
+						<div class="mySlides">
+							<div class="numbertext">2 / 5</div>
+								<img src="./Images/grand_budapest.jpg" style="width:100%">
+							</div>
+
+						<div class="mySlides">
+							<div class="numbertext">3 / 5</div>
+								<img src="./Images/grandmaster.jpg" style="width:100%">
+							</div>
+						
+						<div class="mySlides">
+							<div class="numbertext">4 / 5</div>
+								<img src="./Images/independence_day.jpg" style="width:100%">
+							</div>
+
+						<div class="mySlides">
+							<div class="numbertext">5 / 5</div>
+								<img src="./Images/pull_out_king.png" style="width:100%">
+							</div>
+						
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+
+
+						<div class="column">
+							<img class="jeffPix" src="./Images/ian_malcolm.jpg" style="width:100%" onclick="currentSlide(1)" alt="Ian Malcolm">
+						</div>
+
+						<div class="column">
+							<img class="jeffPix" src="./Images/grand_budapest.jpg" style="width:100%" onclick="currentSlide(2)" alt="Grand Budapest">
+						</div>
+						
+						<div class="column">
+							<img class="jeffPix" src="./Images/grandmaster.jpg" style="width:100%" onclick="currentSlide(3)" alt="Grandmaster">
+						</div>
+						
+						<div class="column">
+							<img class="jeffPix" src="./Images/independence_day.jpg" style="width:100%" onclick="currentSlide(4)" alt="Independence Day">
+						</div>
+						
+						<div class="column">
+							<img class="jeffPix" src="./Images/pull_out_king.png" style="width:100%" onclick="currentSlide(5)" alt="Portlandia">
 						</div>
 					</div>
-					<!-- END PHOTO-CONTAINER 2 -->
-					
-					<!-- PHOTO-CONTAINER 3 -->
-					<div>
-						<div>
-								<img src="./images/grand_budapest.jpg" alt="Wes Anderson">
-								<div>
-									<h3>Click to Be Indie</h3>
-									<p>
-									Jeffrey frequently tests out his acting chops
-									in Wes Anderson's indie flicks, such as 
-									"The Grand Budapest Hotel"
-									</p>
-								</div>
-						</div>
 					</div>
-					<!-- END PHOTO-CONTAINER 3 -->
-					
-					<!-- PHOTO-CONTAINER 4 -->
-					<div>
-						<div>
-								<img src="./images/independence_day.jpg" alt="Independence">
-								<div>
-									<h3>Click to Make a Explode With Love for Jeff</h3>
-									<p>
-									Mr. Goldblum was even a major character in the
-									Michael Bay film, "Independence Day"!
-									 </p>
-								</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 4 -->
-					
-					<!-- PHOTO-CONTAINER 5 -->
-					<div>
-						<div>
-								<img src="./images/pull_out_king.png" alt="Portlandia">
-								<div>
-									<h3>Click to Get Weird</h3>
-									<p>
-									Some of my favorite roles that Jeff has taken
-									recently have been the many roles in the sketch
-									comedy show, "Portlandia".
-									</p>
-								</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 5 -->
-					
-				</div>
-			</div>
+
 		</section>
 		<!-- END GALLERY-->
 		
@@ -171,6 +169,7 @@
 			</div>
 		</section>
 		<!-- END RSVP -->
+
 		
 		<!-- FOOTER -->
 		<div>
@@ -178,5 +177,6 @@
 		</div>
 		<!-- End FOOTER -->
 		
+		<script src="./JS/one_page_website.js" ></script>
 	</body>
 </html>
